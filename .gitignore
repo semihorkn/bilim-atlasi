@@ -1,0 +1,6 @@
+# Authoring sources; the public LMS build uses bundle.js.
+app.js
+data.js
+extract_workbook.py
+vendor/
+.DS_Store
