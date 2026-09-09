@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#08110f" />
     <meta name="description" content="IOTfyEdu Bilim Atlası: bilim insanlarını, hikâyelerini ve sosyal-duygusal becerilerini keşfetmek için etkileşimli zaman çizelgesi." />
     <title>Bilim Atlası | IOTfyEdu</title>
-    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="stylesheet" href="styles.css?v=5" />
   </head>
   <body>
     <div class="noise" aria-hidden="true"></div>
@@ -18,6 +18,7 @@
       </a>
       <div class="top-actions">
         <button class="ghost" id="helpButton">Nasıl keşfederim?</button>
+        <button class="theme-button" id="themeButton" aria-pressed="false" title="Açık/koyu temayı değiştir"><span aria-hidden="true">☼</span><span id="themeLabel">Açık tema</span></button>
         <button class="sound-button" id="soundButton" aria-pressed="false" title="Arayüz seslerini aç/kapat">
           <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span>
           <span>Ses</span>
@@ -33,7 +34,7 @@
         <div class="stats" aria-label="Veri özeti">
           <div><strong id="personCount">25</strong><span>bilim insanı ve dönem</span></div>
           <div><strong id="storyCount">—</strong><span>özgün hikâye</span></div>
-          <div><strong id="skillCount">9</strong><span>temel SES boyutu</span></div>
+          <div><strong id="skillCount">9</strong><span>sosyal ve duygusal beceri</span></div>
         </div>
       </section>
 
@@ -53,7 +54,8 @@
         <div class="skill-chips" id="skillChips" aria-label="Beceri filtreleri"></div>
         <div class="canvas-wrap">
           <canvas id="scene" aria-label="Üç boyutlu bilim tarihi zaman çizelgesi"></canvas>
-          <div class="timeline-labels" id="timelineLabels" aria-hidden="true"></div>
+          <div class="timeline-ruler" id="timelineRuler" aria-label="700 ile 2020 yılları arasındaki tarih cetveli"></div>
+          <div class="timeline-labels" id="timelineLabels" aria-label="Zaman çizgisindeki kişiler"></div>
           <div class="hover-card" id="hoverCard" role="status" aria-live="polite" hidden>
             <div class="hover-topline"><span id="hoverYears"></span><b id="hoverStoryCount"></b></div>
             <h3 id="hoverName"></h3>
@@ -122,10 +124,10 @@
       <button class="dialog-close" id="closeHelp" aria-label="Kapat">×</button>
       <div class="section-kicker">KISA REHBER</div>
       <h2>Bir ışığın izini sür.</h2>
-      <p>Zaman çizgisini sürükleyin, yakınlaşın ve bir kişiyi seçin. “Beceri ağı” görünümünde, ortak SES boyutları güçlü olan kişilerin birbirine nasıl bağlandığını görebilirsiniz.</p>
+      <p>Zaman çizgisini sürükleyin, yakınlaşın ve bir kişiyi seçin. “Beceri ağı” görünümünde, ortak sosyal ve duygusal becerileri güçlü olan kişilerin birbirine nasıl bağlandığını görebilirsiniz.</p>
       <ul><li>Parlak düğüm: seçili kişi</li><li>Çizgi kalınlığı: beceri benzerliği</li><li>Renk: baskın sosyal-duygusal beceri</li></ul>
     </dialog>
 
-    <script defer src="bundle.js?v=4"></script>
+    <script defer src="bundle.js?v=5"></script>
   </body>
 </html>
