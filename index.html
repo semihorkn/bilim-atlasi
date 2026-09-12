@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#f7f5f0" />
-    <meta name="description" content="IOTfyEdu Bilim Atlası: bilim insanlarını, hikâyelerini ve sosyal-duygusal becerilerini keşfetmek için etkileşimli beceri ağı." />
-    <title>Bilim Atlası | IOTfyEdu</title>
-    <link rel="stylesheet" href="styles.css?v=10" />
+    <meta name="description" content="Tarihte önemli izler bırakmış bilim insanları ve sanatçıların ortak sosyal ve duygusal becerilerle nasıl birbirine bağlandığını inceleyin." />
+    <title>Bilim İnsanları Atlası | IOTfyEdu</title>
+    <link rel="stylesheet" href="styles.css?v=11" />
   </head>
   <body>
     <div class="noise" aria-hidden="true"></div>
     <header class="topbar">
-      <a class="brand" href="#" aria-label="IOTfyEdu Bilim Atlası ana sayfa">
+      <a class="brand" href="#" aria-label="IOTfyEdu Bilim İnsanları Atlası ana sayfa">
         <img src="assets/iotfy-code-studio-logo-transparent.png" alt="IOTfy Code Studio" width="356" height="86" />
         <span class="brand-divider"></span>
-        <span>Bilim Atlası</span>
+        <span>Bilim İnsanları Atlası</span>
       </a>
       <div class="top-actions">
         <button class="ghost" id="helpButton">Nasıl keşfederim?</button>
@@ -25,10 +25,10 @@
     <main>
       <section class="hero">
         <div class="eyebrow"><span></span> IOTfyEdu · 721–2020</div>
-        <h1>Bilim <em>Atlası</em></h1>
-        <p>Bir fikrin ardındaki merakı, sebatı ve cesareti keşfet. Bilim insanlarının ortak sosyal ve duygusal becerilerle nasıl birbirine bağlandığını incele.</p>
+        <h1>Bilim İnsanları <em>Atlası</em></h1>
+        <p>Tarihte önemli izler bırakmış bilim insanları ve sanatçıların ortak sosyal ve duygusal becerilerle nasıl birbirine bağlandığını incele.</p>
         <div class="stats" aria-label="Veri özeti">
-          <div><strong id="personCount">25</strong><span>bilim insanı ve dönem</span></div>
+          <div><strong id="personCount">25</strong><span>bilim insanı ve sanatçı</span></div>
           <div><strong id="storyCount">—</strong><span>özgün hikâye</span></div>
           <div><strong id="skillCount">9</strong><span>sosyal ve duygusal beceri</span></div>
         </div>
@@ -44,6 +44,13 @@
         </div>
 
         <div class="skill-chips" id="skillChips" aria-label="Beceri filtreleri"></div>
+        <section class="people-timeline" aria-labelledby="timelineTitle">
+          <div class="timeline-heading">
+            <div><span class="section-kicker">KRONOLOJİK KEŞİF</span><h2 id="timelineTitle">Zaman çizelgesi</h2></div>
+            <p>Bir beceri seçerek bu özelliği paylaşan kişileri belirginleştirin.</p>
+          </div>
+          <div class="people-strip" id="peopleStrip" aria-label="Bilim insanları ve sanatçıların kronolojik zaman çizelgesi"></div>
+        </section>
         <div class="canvas-wrap">
           <canvas id="scene" aria-label="Üç boyutlu bilim insanları beceri ağı"></canvas>
           <div class="timeline-labels" id="timelineLabels" aria-label="Beceri ağındaki kişiler"></div>
@@ -108,10 +115,10 @@
       <button class="dialog-close" id="closeHelp" aria-label="Kapat">×</button>
       <div class="section-kicker">KISA REHBER</div>
       <h2>Bir ışığın izini sür.</h2>
-      <p>Bir bilim insanını seçmek için ağdaki parlak noktasına dokunun. Noktaların üzerine geldiğinizde Excel tablosundaki hikâyeyi ve beceri etiketlerini inceleyebilirsiniz. 3B ağı sürükleyerek döndürün, yakınlaştırın ve filtrelerle keşfinizi daraltın.</p>
+      <p>Zaman çizelgesindeki isim kartlarından veya ağdaki parlak noktalardan bir kişiyi seçin. Bir sosyal ve duygusal beceri düğmesine dokunduğunuzda bu özelliği paylaşan kişiler renklenerek öne çıkar. Noktaların üzerine geldiğinizde Excel tablosundaki hikâyeyi ve beceri etiketlerini inceleyebilirsiniz.</p>
       <ul><li>Parlak düğüm: seçili kişi</li><li>Çizgi kalınlığı: beceri benzerliği</li><li>Renk: baskın sosyal-duygusal beceri</li></ul>
     </dialog>
 
-    <script defer src="bundle.js?v=10"></script>
+    <script defer src="bundle.js?v=11"></script>
   </body>
 </html>

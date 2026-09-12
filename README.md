@@ -1,4 +1,4 @@
-# IOTfyEdu Bilim Atlası
+# IOTfyEdu Bilim İnsanları Atlası
 
 Excel çalışma kitabındaki bilim insanlarını, olayları ve sosyal-duygusal becerileri IOTfyEdu kurumsal kimliğiyle Three.js tabanlı etkileşimli bir zaman çizelgesinde sunar. Paket dış servis veya CDN gerektirmez ve LMS içinde iframe ya da bağımsız HTML içerik olarak çalıştırılabilir.
 
