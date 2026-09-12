@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#f7f5f0" />
     <meta name="description" content="Tarihte önemli izler bırakmış bilim insanları ve sanatçıların ortak sosyal ve duygusal becerilerle nasıl birbirine bağlandığını inceleyin." />
     <title>Bilim İnsanları Atlası | IOTfyEdu</title>
-    <link rel="stylesheet" href="styles.css?v=12" />
+    <link rel="stylesheet" href="styles.css?v=13" />
   </head>
   <body>
     <div class="noise" aria-hidden="true"></div>
@@ -50,6 +50,18 @@
             <p>Bir beceri seçerek bu özelliği paylaşan kişileri belirginleştirin.</p>
           </div>
           <div class="people-strip" id="peopleStrip" aria-label="Bilim insanları ve sanatçıların kronolojik zaman çizelgesi"></div>
+          <aside class="timeline-popup" id="timelinePopup" aria-live="polite" hidden>
+            <button class="timeline-popup-close" id="timelinePopupClose" aria-label="Bilgi penceresini kapat">×</button>
+            <div class="timeline-popup-meta"><span id="timelinePopupYears"></span><b id="timelinePopupCount"></b></div>
+            <h3 id="timelinePopupName"></h3>
+            <p id="timelinePopupStory"></p>
+            <div class="timeline-popup-skills" id="timelinePopupSkills"></div>
+            <div class="timeline-popup-nav" id="timelinePopupNav" hidden>
+              <button id="timelinePopupPrev" aria-label="Önceki hikâye">←</button>
+              <span id="timelinePopupIndex"></span>
+              <button id="timelinePopupNext" aria-label="Sonraki hikâye">→</button>
+            </div>
+          </aside>
         </section>
         <div class="canvas-wrap">
           <canvas id="scene" aria-label="Üç boyutlu bilim insanları beceri ağı"></canvas>
@@ -119,6 +131,6 @@
       <ul><li>Parlak düğüm: seçili kişi</li><li>Çizgi kalınlığı: beceri benzerliği</li><li>Renk: baskın sosyal-duygusal beceri</li></ul>
     </dialog>
 
-    <script defer src="bundle.js?v=12"></script>
+    <script defer src="bundle.js?v=13"></script>
   </body>
 </html>
